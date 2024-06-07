@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co/QfnB3Pz/Captura-de-tela-2024-06-06-210525.png" width="200" alt="Image dashboard" />
+<img src="https://i.ibb.co/QfnB3Pz/Captura-de-tela-2024-06-06-210525.png" width="800" alt="Image dashboard" />
 
 # Site de Blogs em React
 
