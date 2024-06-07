@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 50px);
+}
+
+.container p{
+    font-size: 20px;
+}
+
+.container a{
+    color: #494f7e;
+    text-decoration: none;
+}

@@ -1,0 +1,276 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 50px);
+}
+.container .containerEditModal{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 6px;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 998;
+}
+.container .containerEditModal h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.container .containerEditModal span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    padding: 8.5px;
+    border: 1px solid #494f7e;
+    background-color: #494f7e49;
+    border-radius: 6px;
+    cursor: copy;
+    width: 100%;
+}
+.container .containerEditModal span p{
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+}
+.container .containerEditModal button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #Fff;
+    background-color: #494f7e;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #bfbfbf;
+    transition: 0.2s;
+    height: 50px;
+    width: 100%;
+}
+.container .containerEditModal button:hover{
+    background-color:#343961 ;
+    transition: 0.2s;
+}
+
+.container .containerAllUserStore {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+    min-height: calc(90vh - 50px);
+    max-width: 1200px;
+    padding: 8px;
+}
+
+.container .containerAllUserStore h1 {
+    font-size: 30px;
+    margin-bottom: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.container .containerAllUserStore p{
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+
+.container .containerAllUserStore span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 8.5px;
+    border: 1px solid #494f7e;
+    background-color: #494f7e49;
+    border-radius: 6px;
+    cursor: copy;
+    max-width: 300px;
+}
+.container .containerAllUserStore span p{
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+}
+
+.container .containerAllUserStore h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    border-top: 1px solid #bfbfbf;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.container .containerAllUserStore img{
+    height: 200px;
+    border-radius: 6px;
+    width: 100%;
+    border: 1px solid #bfbfbf;
+}
+
+.container .containerAllUserStore .containerProducts {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .containerAllUserStore .containerProducts .cardProducts {
+    border: 1px solid #bfbfbf;
+    border-radius: 6px;
+    padding: 20px;
+    width: 300px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    transition: 0.1s;
+}
+
+.container .containerAllUserStore .containerProducts .cardProducts:hover {
+    transform: scale(1.04);
+    transition: 0.1s;
+}
+
+.container .containerAllUserStore .containerProducts .cardProducts img {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #bfbfbf;
+}
+
+.container .containerAllUserStore .containerProducts .cardProducts .containerInfoProduto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    border-top: 1px solid #d1d1d1;
+    padding-top: 20px;
+}
+
+.container .containerAllUserStore .containerProducts .cardProducts .containerInfoProduto .texrPrice {
+    color: #28b264;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 120px;
+}
+
+.container .containerAllUserStore .containerProducts .cardProducts .containerInfoProduto .textIndicatorPrice{
+    margin-bottom: 0;
+    color: #000;
+    font-weight: 600;
+}
+
+.container .containerAllUserStore .containerProducts .cardProducts .containerInfoProduto button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #494f7e;
+    width: 50%;
+    border: 0;
+    border-radius: 6px;
+    padding: 8px;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.container .containerAllUserStore .containerProducts .cardProducts .containerInfoProduto button:hover {
+    background-color: #343961;
+    transition: 0.2s;
+}
+
+.container .containerAllUserStore .containerProducts .cardProducts h1 {
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container .containerAllUserStore .containerProducts .cardProducts h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .container .containerAllUserStore {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        width: 100%;
+        min-height: calc(90vh - 50px);
+        max-width: 1200px;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container .containerAllUserStore {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        min-height: calc(90vh - 50px);
+        max-width: 1200px;
+        padding: 8px;
+    }
+    .containerAllUserStore h1{
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .containerAllUserStore h2{
+        text-align: center;
+        width: 100%;
+    }
+    .container .containerAllUserStore span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        padding: 8.5px;
+        border: 1px solid #494f7e;
+        background-color: #494f7e49;
+        border-radius: 6px;
+        cursor: copy;
+        max-width: 300px;
+        margin-right: 0;
+    }
+    .container .containerAllUserStore .containerProducts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .container .containerAllUserStore .containerProducts .cardProducts{
+        margin-right: 0;
+    }
+    .container .containerAllUserStore .containerProducts .cardProducts:hover {
+        transform: scale(1);
+        transition: 0.1s;
+    }
+}

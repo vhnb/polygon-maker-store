@@ -1,0 +1,584 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 50px);
+    background-color: #fff;
+}
+
+.container .containerEditModal{
+    background-color: #fff;
+    display: flex;
+    align-items: start;
+    padding: 20px;
+    border-radius: 6px;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 998;
+}
+.container .containerEditModal h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.container .containerEditModal form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.container .containerEditModal form input{
+    padding: 8px;
+    border-radius: 6px;
+    margin-right: 10px;
+    border: 1px solid #bfbfbf;
+    transition: 0.2s;
+    height: 50px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.container .containerEditModal form input:focus{
+    border: 1px solid #494f7e;
+    transition: 0.2s;
+}
+.container .containerEditModal form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #Fff;
+    background-color: #494f7e;
+    padding: 8px;
+    border-radius: 6px;
+    margin-right: 10px;
+    border: 1px solid #bfbfbf;
+    transition: 0.2s;
+    height: 50px;
+    width: 100%;
+}
+.container .containerEditModal form button:hover{
+    background-color:#343961 ;
+    transition: 0.2s;
+}
+
+.container .containerProducts{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    min-height: calc(90vh - 50px);
+    padding: 8px;
+    filter: drop-shadow(0px 0px 100px #00000014);
+    border-radius: 6px;
+}
+
+.container .containerProducts h1{
+    font-size: 30px;
+    margin-bottom: 32px;
+}
+
+.container .containerProducts .notificationMensageSuccess{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #28b2643a;
+    border: 1px solid #28b264;
+    color: #28b264;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    height: 40px;
+}
+.container .containerProducts .notificationMensageSuccess .hidden {
+    display: none;
+}
+.container .containerProducts .notificationMensageSuccess p{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.container .containerProducts .notificationMensageWarning{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #ffb13430;
+    border: 1px solid #ffb034;
+    color: #ffb034;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    height: 40px;
+}
+.container .containerProducts .notificationMensageWarning p{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.container .containerProducts .formRegisterProduct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.container .containerProducts .formRegisterProduct input{
+    padding: 8px;
+    border-radius: 6px;
+    margin-right: 10px;
+    border: 1px solid #bfbfbf;
+    transition: 0.2s;
+    height: 50px;
+    width: 100%;
+}
+.container .containerProducts .formRegisterProduct input:focus{
+    border: 1px solid #494f7e;
+    transition: 0.2s;
+}
+
+.container .containerProducts .formRegisterProduct button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #Fff;
+    background-color: #494f7e;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #bfbfbf;
+    transition: 0.2s;
+    height: 50px;
+}
+
+.container .containerProducts .formRegisterProduct button:hover{
+    background-color:#343961 ;
+    transition: 0.2s;
+}
+
+.container .containerProducts .formSetPayment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 12px;
+    width: 100%;
+}
+.container .containerProducts .formSetPayment input{
+    padding: 8px;
+    border-radius: 6px;
+    margin-right: 10px;
+    border: 1px solid #bfbfbf;
+    transition: 0.2s;
+    height: 50px;
+    width: 100%;
+}
+.container .containerProducts .formSetPayment input:focus{
+    border: 1px solid #494f7e;
+    transition: 0.2s;
+}
+.container .containerProducts .formSetPayment .btnConfirm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #Fff;
+    background-color: #494f7e;
+    padding: 8px;
+    border-radius: 6px;
+    margin-right: 10px;
+    border: 1px solid #bfbfbf;
+    transition: 0.2s;
+    height: 50px;
+    width: 131.5px;
+}
+.container .containerProducts .formSetPayment .btnConfirm:hover{
+    background-color:#343961 ;
+    transition: 0.2s;
+}
+.container .containerProducts .formSetPayment .btnDelete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #Fff;
+    background-color: #c5233b;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #bfbfbf;
+    transition: 0.2s;
+    height: 50px;
+    width: 131.5px;
+}
+.container .containerProducts .formSetPayment .btnDelete:hover{
+    background-color: #912132;
+    transition: 0.2s;
+}
+
+
+.container .containerProducts .formSetDesc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 12px;
+    width: 100%;
+}
+.container .containerProducts .formSetDesc input{
+    padding: 8px;
+    border-radius: 6px;
+    margin-right: 10px;
+    border: 1px solid #bfbfbf;
+    transition: 0.2s;
+    height: 50px;
+    width: 100%;
+}
+.container .containerProducts  .formSetDesc input:focus{
+    border: 1px solid #494f7e;
+    transition: 0.2s;
+}
+.container .containerProducts  .formSetDesc .btnConfirm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #Fff;
+    background-color: #494f7e;
+    padding: 8px;
+    border-radius: 6px;
+    margin-right: 10px;
+    border: 1px solid #bfbfbf;
+    transition: 0.2s;
+    height: 50px;
+    width: 131.5px;
+}
+.container .containerProducts  .formSetDesc .btnConfirm:hover{
+    background-color:#343961 ;
+    transition: 0.2s;
+}
+.container .containerProducts .formSetDesc .btnDelete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #Fff;
+    background-color: #c5233b;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #bfbfbf;
+    transition: 0.2s;
+    height: 50px;
+    width: 131.5px;
+}
+.container .containerProducts .formSetDesc .btnDelete:hover{
+    background-color: #912132;
+    transition: 0.2s;
+}
+
+.container .containerProducts .formSetBanner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 12px;
+    width: 100%;
+}
+.container .containerProducts .formSetBanner input{
+    padding: 8px;
+    border-radius: 6px;
+    margin-right: 10px;
+    border: 1px solid #bfbfbf;
+    transition: 0.2s;
+    height: 50px;
+    width: 100%;
+}
+.container .containerProducts .formSetBanner input:focus{
+    border: 1px solid #494f7e;
+    transition: 0.2s;
+}
+.container .containerProducts .formSetBanner .btnConfirm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #Fff;
+    background-color: #494f7e;
+    padding: 8px;
+    border-radius: 6px;
+    margin-right: 10px;
+    border: 1px solid #bfbfbf;
+    transition: 0.2s;
+    height: 50px;
+    width: 131.5px;
+}
+.container .containerProducts .formSetBanner .btnConfirm:hover{
+    background-color:#343961 ;
+    transition: 0.2s;
+}
+
+.container .containerProducts .formSetBanner .btnDelete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #Fff;
+    background-color: #c5233b;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #bfbfbf;
+    transition: 0.2s;
+    height: 50px;
+    width: 131.5px;
+}
+.container .containerProducts .formSetBanner .btnDelete:hover{
+    background-color: #912132;
+    transition: 0.2s;
+}
+
+.container .containerProducts .imgBannerStore{
+    height: 150px;
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #bfbfbf;
+}
+
+.container .contentProduct{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.container .contentProduct .contentAllProducts{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.container .contentProduct .contentAllProducts .cardProducts{
+    border: 1px solid #bfbfbf;
+    border-radius: 6px;
+    padding: 20px;
+    width: 300px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    transition: 0.1s;
+}
+.container .contentProduct .contentAllProducts .cardProducts:hover{
+    transform: scale(1.04);
+    transition: 0.1s;
+}
+
+.container .contentProduct .contentAllProducts .cardProducts img{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.container .contentProduct .contentAllProducts .cardProducts h1{
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.container .contentProduct .contentAllProducts .cardProducts h2{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.container .contentProduct .contentAllProducts .cardProducts p{
+    color: #28b264;
+    font-size: 28px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container .contentProduct .contentAllProducts .cardProducts .containerBtnsProduto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .contentProduct .contentAllProducts .cardProducts .containerBtnsProduto button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c5233b;
+    width: 48%;
+    border: 0;
+    border-radius: 6px;
+    padding: 8px;
+    color: #fff;
+    transition: 0.2s;
+}
+.container .contentProduct .contentAllProducts .cardProducts .containerBtnsProduto button:hover{
+    background-color: #912132;
+    transition: 0.2s;
+}
+
+.container .contentProduct .contentAllProducts .cardProducts .containerBtnsProduto .btnEdit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #494f7e;
+    width: 48%;
+    border: 0;
+    border-radius: 6px;
+    padding: 8px;
+    color: #fff;
+    transition: 0.2s;
+}
+.container .contentProduct .contentAllProducts .cardProducts .containerBtnsProduto .btnEdit:hover{
+    background-color: #343961;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 1200px) {
+    .container .containerProducts{
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1200px;
+        min-height: calc(90vh - 50px);
+        padding: 30px;
+        filter: drop-shadow(0px 0px 100px #00000014);
+        border-radius: 6px;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .container .containerProducts{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1200px;
+        min-height: calc(90vh - 50px);
+        padding: 10px;
+        filter: drop-shadow(0px 0px 100px #00000014);
+        border-radius: 6px;
+    }
+    .container .containerProducts h1{
+        text-align: center;
+        width: 100%;
+    }
+    .container .contentProduct .contentAllProducts .cardProducts{
+        margin-right: 0;
+    }
+    .container .contentProduct .contentAllProducts .cardProducts:hover{
+        transform: scale(1);
+        transition: 0.1s;
+    }
+    .container .containerProducts .formRegisterProduct{
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+    .container .containerProducts .formRegisterProduct input{
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .container .containerProducts .formRegisterProduct button{
+        width: 100%;
+        margin-right: 0;
+    }
+    .container .containerProducts .formSetPayment{
+        padding: 20px;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .container .containerProducts .formSetPayment input{
+        width: 100%;
+        margin-bottom: 10px;
+        width: 100%;
+        margin-right: 0;
+    }
+    .container .containerProducts .formSetPayment .btnConfirm{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .container .containerProducts .formSetPayment .btnDelete{
+        width: 100%;
+        margin-right: 0;
+    }
+    .container .containerProducts .formSetDesc{
+        padding: 20px;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .container .containerProducts .formSetDesc input{
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .container .containerProducts .formSetDesc .btnConfirm{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .container .containerProducts .formSetDesc .btnDelete{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .container .containerProducts .formSetBanner{
+        padding: 20px;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .container .containerProducts .formSetBanner input{
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .container .containerProducts .formSetBanner .btnConfirm{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .container .containerProducts .formSetBanner .btnDelete{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .container .contentProduct{
+        width: 100%;
+    }
+    .container .contentProduct h1{
+        text-align: center;
+        width: 100%;
+    }
+    .container .contentProduct .contentAllProducts{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container .containerProducts .notificationMensageWarning{
+        width: 316px;
+    }
+    .container .containerProducts .notificationMensageSuccess{
+        width: 316px;
+    }
+    .container .containerProducts .imgBannerStore{
+        width:316px ;
+    }
+}

@@ -1,0 +1,124 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.container .contentMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.container .contentMain .contentTextMain {
+  margin-left: 8px;
+}
+
+.container .contentMain .contentTextMain ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container .contentMain .contentTextMain ul li {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.container .contentMain .contentTextMain ul .iconListMain {
+  color: #494f7e;
+  font-size: 30px;
+}
+
+.container .contentMain .contentTextMain h1 {
+  font-size: 40px;
+  width: 400px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.container .contentMain .contentTextMain h1 span {
+  color: #494f7e;
+}
+
+.container .contentMain .contentTextMain button {
+  background-color: #494f7e;
+  border: 0;
+  padding: 10px;
+  border-radius: 6px;
+  color: #fff;
+  width: 350px;
+  transition: 0.2s;
+}
+
+.container .contentMain .contentTextMain button:hover {
+  background-color: #343961;
+  transition: 0.2s;
+}
+
+.container .contentMain .contentImgMain .imgMain {
+  height: auto;
+  width: 500px;
+}
+
+@media screen and (max-width: 1200px) { /*150%*/
+  .container .contentMain .contentTextMain {
+    margin-left: 35px;
+  }
+
+  .container .contentMain .contentImgMain {
+    margin-right: 35px;
+  }
+}
+
+@media screen and (max-width: 1000px) { /*200%*/
+  .container .contentMain {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container .contentMain .contentTextMain {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .container .contentMain .contentTextMain h1 {
+    font-size: 20px;
+    width: 300px;
+    line-height: 35px;
+    margin-bottom: 20px;
+    text-align: start;
+  }
+
+  .container .contentMain .contentTextMain button {
+    background-color: #494f7e;
+    border: 0;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    width: 99%;
+    transition: 0.2s;
+    margin-bottom: 20px;
+  }
+
+  .container .contentMain .contentImgMain{
+    margin-right: 0;
+  }
+
+  .container .contentMain .contentImgMain .imgMain {
+    height: auto;
+    width: 320px;
+  }
+}

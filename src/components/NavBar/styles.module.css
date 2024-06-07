@@ -1,0 +1,137 @@
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #bfbfbf;
+    background-color: #fff;
+    z-index: 999;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(5px);
+}
+
+.header .containerHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.header h1 {
+    font-weight: 600;
+    font-size: 21px;
+    margin-bottom: 0;
+    margin-left: 8px;
+}
+
+.header h1 span {
+    color: #494f7e;
+}
+
+.header .containerIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header .containerIcon .imgIcon {
+    height: auto;
+    width: 50px;
+}
+
+.header .containerUserLogout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 0;
+    border: 0;
+    background-color: #494f7e;
+    color: #fff;
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 13px;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-right: 8px;
+}
+
+.header button:hover {
+    background-color: #343961;
+    transition: 0.2s;
+}
+
+.header .btnProfile {
+    flex-direction: column;
+    background-color: #494f7e;
+    transition: 0.2s;
+    margin-left: 12px;
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header .btnProfile p {
+    width: 100px;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.header .btnProfile:hover {
+    background-color: #343961;
+    transition: 0.2s;
+}
+
+.header .containerMenuProfile {
+    border: 1px solid #e3e3e3;
+    z-index: 999;
+}
+
+.header .itemMenu {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.header .itemMenu a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header .itemMenu:hover {
+    background-color: #e3e3e3;
+    transition: 0.2s;
+}
+
+.header .itemMenuLogout {
+    padding: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #c5233b;
+}
+
+.header .itemMenuLogout:hover {
+    background-color: #c5233b;
+    color: #fff;
+}

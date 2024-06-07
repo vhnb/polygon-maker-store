@@ -1,0 +1,18 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 20vh;
+    padding: 20px;
+    border-top: 1px solid #bfbfbf;
+    margin-top: 20px;
+}
+
+.footer p{
+    margin-bottom: 0;
+}
+
+.footer p a{
+    color: #494f7e;
+}
