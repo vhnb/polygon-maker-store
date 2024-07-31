@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co/QfnB3Pz/Captura-de-tela-2024-06-06-210525.png" width="1000" alt="Image dashboard" />
+<img src="https://i.ibb.co/hmTHJ8r/Captura-de-tela-2024-07-31-205843.png" width="1000" alt="Image dashboard" />
 
 # Dashboard para criação de loja
 
